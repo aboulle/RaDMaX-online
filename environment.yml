@@ -1,0 +1,10 @@
+channels:
+  - conda-forge
+dependencies:
+  - numpy
+  - scipy
+  - ipywidgets
+  - bqplot
+  - appmode
+  - pip:
+    - xrayutilities
