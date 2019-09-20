@@ -6,5 +6,6 @@ dependencies:
   - ipywidgets
   - bqplot
   - appmode
+  - pip
   - pip:
     - xrayutilities
