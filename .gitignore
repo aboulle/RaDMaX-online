@@ -2,4 +2,6 @@
 Masters/
 Test data/
 __pycache__/
+*.ogv
+*.mov
 

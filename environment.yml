@@ -5,7 +5,7 @@ dependencies:
   - scipy
   - ipywidgets
   - bqplot
-  - appmode
+  - voila
   - pip
   - pip:
     - xrayutilities
