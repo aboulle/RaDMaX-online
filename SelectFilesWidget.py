@@ -19,6 +19,7 @@ class SelectFilesButton(widgets.Button):
         # Set on click behavior.
         self.on_click(self.select_files)
         self.layout.width='20%'
+        self.default_path=''
 
     @staticmethod
     def select_files(b):
@@ -37,7 +38,7 @@ class SelectFilesButton(widgets.Button):
         root.call('wm', 'attributes', '.', '-topmost', True)
         # List of selected fileswill be set to b.value
         ftypes = [('XRD data in xy format', '*.txt')]
-        b.files = filedialog.askopenfilename(filetypes = ftypes, multiple=True)
+        b.files = filedialog.askopenfilename(filetypes = ftypes, multiple=True, initialdir=b.default_path)
 
         #b.description = "Files Selected"
         b.icon = "check-square-o"
