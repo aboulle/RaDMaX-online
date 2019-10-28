@@ -1,5 +1,5 @@
 title: RaDMaX online
-description: A web-based application for the determination of strain and disorder depth-profiles in irradiated materials
+description: A web application for the determination of strain and disorder profiles in irradiated materials from XRD data
 google_analytics: 
 show_downloads: true
 theme: jekyll-theme-modernist
