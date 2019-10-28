@@ -12,7 +12,7 @@ _RaDMaX online_ is a web application hosted at Universtiy of Limoges:
 
 If the previous link doesn't work or if the server is saturated (no or slow access), a Binder instance of _RaDMaX online_ can be launched here:
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/aboulle/RaDMaX-webapp/master?urlpath=voila%2Frender%2FRaDMaX.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/aboulle/RaDMaX-online/master?urlpath=voila%2Frender%2FRaDMaX.ipynb)
 
 At first launch Binder converts the github repository into a Docker image which might take some time (up to a few minutes). See the [Binder website](https://mybinder.org/) for further details.
 
@@ -36,4 +36,4 @@ pip install xrayutilities
 When working in local mode change the first line of RaDMaX.ipynb to ```local = 1``` to benefit from automatic session saving capabilities.
 
 ## License
-This program is licensed under the  CeCILL license. See [LICENSE](https://github.com/aboulle/RaDMaX-webapp/blob/master/LICENSE.txt) file.
+This program is licensed under the  CeCILL license. See [LICENSE](https://github.com/aboulle/RaDMaX-online/blob/master/LICENSE.txt) file.
