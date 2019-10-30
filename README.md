@@ -6,7 +6,7 @@ Some crystallographic calculations are performed using [xrayutilities](https://x
 
 ## Program usage
 
-_RaDMaX online_ is a web application hosted at Universtiy of Limoges: 
+_RaDMaX online_ is a web application hosted at Universtiy of Limoges:
 
 [<img src="https://www.unilim.fr/wp-content/uploads/sites/8/2015/09/logo-ul@2x.png" alt="unilim" width="110"/>](https://radmax.unilim.fr/)
 
@@ -15,6 +15,10 @@ If the previous link doesn't work or if the server is saturated (no or slow acce
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/aboulle/RaDMaX-online/master?urlpath=voila%2Frender%2FRaDMaX.ipynb)
 
 At first launch Binder converts the github repository into a Docker image which might take some time (up to a few minutes). See the [Binder website](https://mybinder.org/) for further details.
+
+## Video tutorial
+<iframe width="560" height="315" src="https://www.youtube.com/embed/53y2MJijKps" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 ## Offline mode
 The Jupyter notebook can also be executed locally. Clone or download this repository and install all required dependencies. Using pip :
