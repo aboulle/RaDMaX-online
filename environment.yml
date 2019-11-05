@@ -4,7 +4,7 @@ dependencies:
   - numpy
   - scipy
   - ipywidgets
-  - bqplot
+  - bqplot=0.11.2
   - voila
   - pip
   - pip:
