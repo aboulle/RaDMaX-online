@@ -6,11 +6,11 @@ Some crystallographic calculations are performed using [xrayutilities](https://x
 
 ## Program usage
 
-_RaDMaX online_ is a web application hosted at Universtiy of Limoges:
+_RaDMaX online_ is a web application hosted at Universtiy of Limoges (the page may take a few seconds to load):
 
 [<img src="https://www.unilim.fr/wp-content/uploads/sites/8/2015/09/logo-ul@2x.png" alt="unilim" width="110"/>](https://radmax.unilim.fr/)
 
-If the previous link doesn't work or if the server is saturated (no or slow access), a Binder instance of _RaDMaX online_ can be launched here:
+If for any reason the previous link doesn't work properly, a Binder instance of _RaDMaX online_ can be launched here:
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/aboulle/RaDMaX-online/master?urlpath=voila%2Frender%2FRaDMaX.ipynb)
 
