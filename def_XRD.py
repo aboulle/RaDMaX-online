@@ -213,7 +213,7 @@ def f_Refl_Thin_Film(th, param, cst):
 		S1 = (res - eta + sqrt_eta2)*np.exp(-1j*T*sqrt_eta2)
 		S2 = (res - eta - sqrt_eta2)*np.exp(1j*T*sqrt_eta2)
 
-		res = (eta + sqrt_eta2*((S1+S2)/(S1-S2))) * (FH/FmH)**0.5
+		res = (eta + sqrt_eta2*((S1+S2)/(S1-S2)))
 		n += 1
 
 	ical = np.convolve(abs(res)**2, resol, mode='same')
@@ -260,7 +260,7 @@ def f_Refl_Thick_Film(th, param,cst):
 	S1 = (res - eta + sqrt_eta2)*np.exp(-1j*T*sqrt_eta2)
 	S2 = (res - eta - sqrt_eta2)*np.exp(1j*T*sqrt_eta2)
 
-	res = (eta + sqrt_eta2*((S1+S2)/(S1-S2))) * (FH/FmH)**0.5
+	res = (eta + sqrt_eta2*((S1+S2)/(S1-S2)))
 
 	n = 1
 	while (n<=N):
@@ -274,7 +274,7 @@ def f_Refl_Thick_Film(th, param,cst):
 		S1 = (res - eta + sqrt_eta2)*np.exp(-1j*T*sqrt_eta2)
 		S2 = (res - eta - sqrt_eta2)*np.exp(1j*T*sqrt_eta2)
 
-		res = (eta + sqrt_eta2*((S1+S2)/(S1-S2))) * (FH/FmH)**0.5
+		res = (eta + sqrt_eta2*((S1+S2)/(S1-S2)))
 		n += 1
 
 	ical = np.convolve(abs(res)**2, resol, mode='same')
@@ -313,7 +313,7 @@ def f_Refl_Thick_Film_and_Substrate(th, param,cst):
 	thB = thB_S - strain * np.tan(thB_S)
 
 	eta = (-b_S*(th-thB_sub)*np.sin(2*thB_sub) - 0.5*G*F0_sub*(1-b_sub)) / ((abs(b_sub)**0.5)*G*(FH_sub*FmH_sub)**0.5 )
-	res = (eta - np.sign(eta.real)*((eta*eta - 1)**0.5)) * (FH_sub / FmH_sub)**0.5
+	res = (eta - np.sign(eta.real)*((eta*eta - 1)**0.5))
 
 	g0 = np.sin(thB[0] - phi)
 	gH = -np.sin(thB[0] + phi)
@@ -325,7 +325,7 @@ def f_Refl_Thick_Film_and_Substrate(th, param,cst):
 	S1 = (res - eta + sqrt_eta2)*np.exp(-1j*T*sqrt_eta2)
 	S2 = (res - eta - sqrt_eta2)*np.exp(1j*T*sqrt_eta2)
 
-	res = (eta + sqrt_eta2*((S1+S2)/(S1-S2))) * (FH/FmH)**0.5
+	res = (eta + sqrt_eta2*((S1+S2)/(S1-S2)))
 
 	n = 1
 	while (n<=N):
@@ -339,7 +339,7 @@ def f_Refl_Thick_Film_and_Substrate(th, param,cst):
 		S1 = (res - eta + sqrt_eta2)*np.exp(-1j*T*sqrt_eta2)
 		S2 = (res - eta - sqrt_eta2)*np.exp(1j*T*sqrt_eta2)
 
-		res = (eta + sqrt_eta2*((S1+S2)/(S1-S2))) * (FH/FmH)**0.5
+		res = (eta + sqrt_eta2*((S1+S2)/(S1-S2)))
 		n += 1
 
 	ical = np.convolve(abs(res)**2, resol, mode='same')
