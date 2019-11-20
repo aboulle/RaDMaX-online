@@ -76,7 +76,7 @@ def compute_cst(w_list, th):
 	sample = w_list[10].value
 	sdw_model = w_list[11].value
 	sdw_basis = int(w_list[12].value) # number of splines
-	
+
 	algo = w_list[20].value
 	min_strain = float(w_list[21].value)
 	max_strain = float(w_list[22].value)
@@ -85,7 +85,7 @@ def compute_cst(w_list, th):
 	gsa_temp = float(w_list[25].value)
 	gsa_cycles = float(w_list[26].value)
 	gsa_Tsteps = float(w_list[27].value)
-	
+
 	cst = {"re":re, "wl":wl, "bkg":bkg, "offset":offset, "width":width, "eta":eta,
 			"a": a, "b":b, "c":c, "alpha":alpha, "beta":beta, "gamma":gamma,
 			"Vol":Vol, "phi":phi, "FH":FH, "FmH":FmH, "F0":F0,
@@ -154,7 +154,7 @@ def f_Refl_Default(th, param, cst):
 	thB = thB_S - strain * np.tan(thB_S)
 
 	eta = (-b_S*(th-thB_S)*np.sin(2*thB_S) - 0.5*G*F0*(1-b_S)) / ((abs(b_S)**0.5)*G*(FH*FmH)**0.5 )
-	res = (eta - np.sign(eta.real)*((eta*eta - 1)**0.5)) * (FH / FmH)**0.5
+	res = (eta - np.sign(eta.real)*((eta*eta - 1)**0.5))
 
 	n = 1
 	while (n<=N):
@@ -168,7 +168,7 @@ def f_Refl_Default(th, param, cst):
 		S1 = (res - eta + sqrt_eta2)*np.exp(-1j*T*sqrt_eta2)
 		S2 = (res - eta - sqrt_eta2)*np.exp(1j*T*sqrt_eta2)
 
-		res = (eta + sqrt_eta2*((S1+S2)/(S1-S2))) * (FH/FmH)**0.5
+		res = (eta + sqrt_eta2*((S1+S2)/(S1-S2)))
 		n += 1
 
 	ical = np.convolve(abs(res)**2, resol, mode='same')
@@ -356,7 +356,3 @@ def f_Refl(th, param, cst):
 		return f_Refl_Thick_Film(th, param, cst)
 	if cst["sample"] == "Thick film + substrate":
 		return f_Refl_Thick_Film_and_Substrate(th, param,cst)
-
-
-
-
