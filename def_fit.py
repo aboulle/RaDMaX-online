@@ -13,7 +13,7 @@ def fit_curve(x, y, param, cst):
 
 
 	def residual(param, x, y, cst):
-		y_cal = f_Refl(x, param, cst)
+		y_cal = f_Refl(x, param, cst)[0]
 		return (np.log10(y) - np.log10(y_cal))
 
 	if cst["algo"] == 'Least squares':

@@ -2,7 +2,7 @@
 from def_strain import *
 from def_DW import *
 #from tools import *
-#from time import *
+from time import *
 import numpy as np
 
 try:
@@ -347,7 +347,7 @@ def f_Refl_Thick_Film_and_Substrate(th, param,cst):
 
 
 
-def f_Refl(th, param, cst):
+def f_Refl_choice(th, param, cst):
 	if cst["sample"] == 'Single crystal':
 		return f_Refl_Default(th, param, cst)
 	if cst["sample"] == 'Thin film':
@@ -356,3 +356,9 @@ def f_Refl(th, param, cst):
 		return f_Refl_Thick_Film(th, param, cst)
 	if cst["sample"] == "Thick film + substrate":
 		return f_Refl_Thick_Film_and_Substrate(th, param,cst)
+
+def f_Refl(th, param, cst):
+	t0 = time()
+	ical = f_Refl_choice(th, param, cst)
+	t = time() - t0
+	return ical, t
