@@ -94,3 +94,8 @@ def cubicSpline(z,w):
         somme = somme + poids * bSpline3(z-index+3)
         index = index + 1
     return somme
+
+# Compute root mean-squared error of log I
+def rmse(yo, yc):
+	mse = ((np.log10(yo)-np.log10(yc))**2).sum()/len(yo)
+	return np.sqrt(mse)
