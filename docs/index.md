@@ -95,10 +95,10 @@ $$
 F_H = DW \times F_{0,H}
 $$
 
-where $$F_{0,H}$$ is he structure factor of the bulk material and $DW$ is the Debye-Waller factor which ranges between 0 and 1. The $$DW$$ is related to random atomic displacements $$\delta \bold u$$ via:
+where $$F_{0,H}$$ is he structure factor of the bulk material and $DW$ is the Debye-Waller factor which ranges between 0 and 1. The $$DW$$ is related to random atomic displacements $$\delta \mathbf {u}$$ via:
 
 $$
-DW = \left\langle  \exp\left[  i \bold {H} \delta \bold {u}  \right]  \right\rangle
+DW = \left\langle  \exp\left[  i \mathbf {H} \delta \mathbf {u}  \right]  \right\rangle
 $$
 
 The equations above are used to generated the diffracted intensity for all $\theta$ values provided by the user. **The fitting procedure consist in finding the best $$e_{zz}$$ and $$DW$$ values so that the calculated curve matches the experimental data provided by the user. This can be done either manually (via the interactive strain/DW plots), or automatically using a least-squares fitting procedure**.
