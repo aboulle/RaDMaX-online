@@ -1,3 +1,5 @@
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
 _RaDMaX online_ is a web-based program that allows to retrieve strain and disorder depth-profiles in ion-irradiated materials from the simulation of X-ray diffraction data recorded in symmetric $\theta/2\theta$ geometry.
 
 _RaDMaX online_ is written in [Python](https://www.python.org/), using the [NumPy](https://numpy.org/) and [SciPy](https://scipy.org/) libraries. The graphical user interface is written within a [Jupyter](https://jupyter.org/) notebook using [ipywidgets](https://github.com/jupyter-widgets/ipywidgets) for interactive widgets and [bqplot](https://github.com/bloomberg/bqplot) for interactive plots. The html/css/javascript rendering is achieved with [voilà](https://github.com/voila-dashboards/voila). Some crystallographic calculations are performed using [xrayutilities](https://xrayutilities.sourceforge.io/).
