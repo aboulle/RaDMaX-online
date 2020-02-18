@@ -4,6 +4,8 @@ _RaDMaX online_ is written in [Python](https://www.python.org/), using the [NumP
 
 **Data privacy**: **no data is stored on the server**. All data files uploaded to _RaDMaX online_ and all calculations performed with _RaDMaX online_ are stored in RAM and are definitely lost when uploading a new data set or when closing the program. Session saving capabilities are available if you run the Jupyter notebook in offline mode (see [below](#offline-mode)).
 
+**Help and support**: new crystal structures can be added upon request. Bug reports and improvement suggestions are welcome. Contact info: [alexandre.boulle@unilim.fr](mailto:alexandre.boulle@unilim.fr)
+
 ## Program usage
 
 _RaDMaX online_ is a web application hosted at Universtiy of Limoges (the page may take a few seconds to load):
@@ -15,8 +17,6 @@ If for any reason the previous link doesn't work properly, a Binder instance of 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/aboulle/RaDMaX-online/master?urlpath=voila%2Frender%2FRaDMaX.ipynb)
 
 At first launch Binder converts the github repository into a Docker image which might take some time (up to a few minutes). See the [Binder website](https://mybinder.org/) for further details.
-
-**Help and support**: new crystal structures can be added upon request. Bug reports and improvement suggestions are welcome. Contact info: alexandre.boulle@unilim.fr
 
 ## Video tutorial
 
