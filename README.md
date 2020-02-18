@@ -1,8 +1,10 @@
 _RaDMaX online_ is a web-based program that allows to retrieve strain and disorder profiles in ion-irradiated materials from the simulation of X-ray diffraction data recorded in symmetric thêta-2thêta geometry.
 
-_RaDMaX online_ is written in [Python](https://www.python.org/), using the [NumPy](https://numpy.org/) and [SciPy](https://scipy.org/) libraries. The graphical user interface is written within a [Jupyter](https://jupyter.org/) notebook using [ipywidgets](https://github.com/jupyter-widgets/ipywidgets) for interactive widgets and [bqplot](https://github.com/bloomberg/bqplot) for interactive plots. The html/css/javascript rendering is achieved with [voilà](https://github.com/voila-dashboards/voila).
+_RaDMaX online_ is written in [Python](https://www.python.org/), using the [NumPy](https://numpy.org/) and [SciPy](https://scipy.org/) libraries. The graphical user interface is written within a [Jupyter](https://jupyter.org/) notebook using [ipywidgets](https://github.com/jupyter-widgets/ipywidgets) for interactive widgets and [bqplot](https://github.com/bloomberg/bqplot) for interactive plots. The html/css/javascript rendering is achieved with [voilà](https://github.com/voila-dashboards/voila). Some crystallographic calculations are performed using [xrayutilities](https://xrayutilities.sourceforge.io/).
 
-Some crystallographic calculations are performed using [xrayutilities](https://xrayutilities.sourceforge.io/).
+**Data privacy**: **no data is stored on the server**. All data files uploaded to _RaDMaX online_ and all calculations performed with _RaDMaX online_ are stored in RAM and are definitely lost when uploading a new data set or when closing the program. Session saving capabilities are available if you run the Jupyter notebook in offline mode (see [below](#offline-mode)).
+
+**Help and support**: new crystal structures can be added upon request. Bug reports and improvement suggestions are welcome. Contact info: [alexandre.boulle@unilim.fr](mailto:alexandre.boulle@unilim.fr)
 
 ## Program usage
 
