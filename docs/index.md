@@ -101,7 +101,7 @@ $$
 DW = \left\langle  \exp\left[  i \mathbf {H} \delta \mathbf {u}  \right]  \right\rangle
 $$
 
-The equations above are used to generated the diffracted intensity for all $$\theta$$ values provided by the user. **The fitting procedure consist in finding the best $$e_{zz}$$ and $$DW$$ values so that the calculated curve matches the experimental data provided by the user. This can be done either manually (via the interactive strain/DW plots), or automatically using a least-squares fitting procedure**.
+The equations above are used to generated the diffracted intensity for all $$\theta$$ values provided by the user. *The fitting procedure consist in finding the best $$e_{zz}$$ and $$DW$$ values so that the calculated curve matches the experimental data provided by the user. This can be done either manually (via the interactive strain/DW plots), or automatically using a least-squares fitting procedure*.
 
 In order to limit the number of adjustable parameters and avoid numerical instabilities, the values of $$e_{zz}$$ and $$DW$$ are constrained to exhibit a *cubic spline* shape. This is performed using *cubic B-spline* functions:
 
