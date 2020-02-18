@@ -83,7 +83,7 @@ $$
 T = \pi C \Gamma \sqrt{F_H F_{\bar H}} t / \left( \lambda \sqrt{\gamma_0 \gamma_H} \right)
 $$
 
-where $$\Gamma = r_e \lambda / \pi V$$, $$r_e = e^2 / 4 \pi \epsilon_0 m c^2$$ and $$b = \gamma_0 / \gamma_H$$. $$C$$ is the polarization of the incident beam, $$D_0$$ and $$D_H$$ are the incident and diffracted beam amplitudes, $$\gamma_0$$ and $$\gamma_H$$ are the direction cosines of the incident and diffracted beam with respect to the surface normal. In the above equations, $$t$$ is the sub-layer thickness, $$F_H$$ and $$F_{\bar H}$$ are the structure factor of the $$hkl$$ and $$\overline{hkl}$$ reflections and $\theta_B$ is the Bragg angle within the given layer. This angle is related to the strain component $$e_{zz}$$ via:
+where $$\Gamma = r_e \lambda / \pi V$$, $$r_e = e^2 / 4 \pi \epsilon_0 m c^2$$ and $$b = \gamma_0 / \gamma_H$$. $$C$$ is the polarization of the incident beam, $$D_0$$ and $$D_H$$ are the incident and diffracted beam amplitudes, $$\gamma_0$$ and $$\gamma_H$$ are the direction cosines of the incident and diffracted beam with respect to the surface normal. In the above equations, $$t$$ is the sub-layer thickness, $$F_H$$ and $$F_{\bar H}$$ are the structure factor of the $$hkl$$ and $$\overline{hkl}$$ reflections and $$\theta_B$$ is the Bragg angle within the given layer. This angle is related to the strain component $$e_{zz}$$ via:
 
 $$
 \theta_B = \arcsin \left[ \lambda / 2 d_0 (1+e_{zz})\right]
@@ -95,13 +95,13 @@ $$
 F_H = DW \times F_{0,H}
 $$
 
-where $$F_{0,H}$$ is he structure factor of the bulk material and $DW$ is the Debye-Waller factor which ranges between 0 and 1. The $$DW$$ is related to random atomic displacements $$\delta \mathbf {u}$$ via:
+where $$F_{0,H}$$ is he structure factor of the bulk material and $$DW$$ is the Debye-Waller factor which ranges between 0 and 1. The $$DW$$ is related to random atomic displacements $$\delta \mathbf {u}$$ via:
 
 $$
 DW = \left\langle  \exp\left[  i \mathbf {H} \delta \mathbf {u}  \right]  \right\rangle
 $$
 
-The equations above are used to generated the diffracted intensity for all $\theta$ values provided by the user. **The fitting procedure consist in finding the best $$e_{zz}$$ and $$DW$$ values so that the calculated curve matches the experimental data provided by the user. This can be done either manually (via the interactive strain/DW plots), or automatically using a least-squares fitting procedure**.
+The equations above are used to generated the diffracted intensity for all $$\theta$$ values provided by the user. **The fitting procedure consist in finding the best $$e_{zz}$$ and $$DW$$ values so that the calculated curve matches the experimental data provided by the user. This can be done either manually (via the interactive strain/DW plots), or automatically using a least-squares fitting procedure**.
 
 In order to limit the number of adjustable parameters and avoid numerical instabilities, the values of $$e_{zz}$$ and $$DW$$ are constrained to exhibit a *cubic spline* shape. This is performed using *cubic B-spline* functions:
 
@@ -109,7 +109,7 @@ $$
 f (z) = \sum_{i = 1}^{N_w^{S,D}} w_i^{S,D} B_{i,3}(z)
 $$
 
-where $$N_w^{S,D}$$ is the number of B-splines used to describe the strain (‘S’) and disorder (‘D’) profiles (typical values are in the 5-15 range), $$w_i^{S,D}$$ are the weights to be determined in the fitting procedure and $$B_{i,3}(z)$$ is the third-degree basis function, and $z$ is the depth coordinate.
+where $$N_w^{S,D}$$ is the number of B-splines used to describe the strain (‘S’) and disorder (‘D’) profiles (typical values are in the 5-15 range), $$w_i^{S,D}$$ are the weights to be determined in the fitting procedure and $$B_{i,3}(z)$$ is the third-degree basis function, and $$z$$ is the depth coordinate.
 
 Furter details regarding B-spline functions and the theoretical background can be found in the following references: [Boulle & Debelle, 2010](https://www.unilim.fr/pages_perso/alexandre.boulle/files/Boulle%20JAC%202010.pdf), [Souilah, Boulle & Debelle, 2016](https://www.unilim.fr/pages_perso/alexandre.boulle/files/Souilah%20JAC%2015.pdf) and [Boulle & Mergnac, 2020](https://arxiv.org/pdf/1911.06521.pdf)
 
