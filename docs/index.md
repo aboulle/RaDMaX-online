@@ -2,9 +2,7 @@ _RaDMaX online_ is a web-based program that allows to retrieve strain and disord
 
 _RaDMaX online_ is written in [Python](https://www.python.org/), using the [NumPy](https://numpy.org/) and [SciPy](https://scipy.org/) libraries. The graphical user interface is written within a [Jupyter](https://jupyter.org/) notebook using [ipywidgets](https://github.com/jupyter-widgets/ipywidgets) for interactive widgets and [bqplot](https://github.com/bloomberg/bqplot) for interactive plots. The html/css/javascript rendering is achieved with [voilà](https://github.com/voila-dashboards/voila). Some crystallographic calculations are performed using [xrayutilities](https://xrayutilities.sourceforge.io/).
 
-
-
-**Data privacy**: ____no data is stored on the server____. All data files uploaded to _RaDMaX online_ and all calculations performed with _RaDMaX online_ are stored in RAM and are definitely lost when uploading a new data set or when closing the program. Session saving capalities are available if you run the Jupyter notebook in offline mode (see [below](#offline-mode))
+**Data privacy**: **no data is stored on the server**. All data files uploaded to _RaDMaX online_ and all calculations performed with _RaDMaX online_ are stored in RAM and are definitely lost when uploading a new data set or when closing the program. Session saving capalities are available if you run the Jupyter notebook in offline mode (see [below](#offline-mode))
 
 ## Program usage
 
