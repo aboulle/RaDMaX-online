@@ -4,6 +4,8 @@
 import os
 import numpy as np
 import xrayutilities as xu
+from scipy.signal import find_peaks
+from scipy.ndimage import gaussian_filter1d
 #import math
 
 
@@ -97,5 +99,22 @@ def cubicSpline(z,w):
 
 # Compute root mean-squared error of log I
 def rmse(yo, yc):
-	mse = ((np.log10(yo)-np.log10(yc))**2).sum()/len(yo)
-	return np.sqrt(mse)
+    mse = ((np.log10(yo)-np.log10(yc))**2).sum()/len(yo)
+    return np.sqrt(mse)
+
+def auto_strain(tth, iexp, cst):
+    wl = cst["wl"]
+
+    iexp[iexp==0]=1
+    iexp /= iexp.max()
+    Q = 4 * np.pi * np.sin(tth*np.pi/360)/wl 
+    eps = 100 * (Q - Q[iexp==iexp.max()]) / Q
+
+    ifilt = gaussian_filter1d(iexp, 2)
+    peaks, _ = find_peaks(ifilt,
+                               #height = 0,
+                               threshold=1e-6,
+                               distance = 1,
+                               prominence = 1e-5)
+    return -eps[peaks[0]]
+
