@@ -2,6 +2,9 @@
 
 _RaDMaX online_ is a web-based program that allows to retrieve strain and disorder depth-profiles in ion-irradiated materials from the simulation of X-ray diffraction data recorded in symmetric $$\theta/2\theta$$ geometry.
 
+If you use this software in an academic work, please cite:
+A. Boulle & V. Mergnac, _RaDMaX online: a web-based program for the determination of strain and damage profiles in irradiated crystals using X-ray diffraction_  J. Appl. Cryst. 53 (2020). https://doi.org/10.1107/S1600576720002514. 
+
 _RaDMaX online_ is written in [Python](https://www.python.org/), using the [NumPy](https://numpy.org/) and [SciPy](https://scipy.org/) libraries. The graphical user interface is written within a [Jupyter](https://jupyter.org/) notebook using [ipywidgets](https://github.com/jupyter-widgets/ipywidgets) for interactive widgets and [bqplot](https://github.com/bloomberg/bqplot) for interactive plots. The html/css/javascript rendering is achieved with [voilà](https://github.com/voila-dashboards/voila). Some crystallographic calculations are performed using [xrayutilities](https://xrayutilities.sourceforge.io/). The crystal structures ("crystallographic information file") are obtained from the [Crystallography Open Database](http://www.crystallography.net/cod/).
 
 **Data privacy**: **no data is stored on the server**. All data files uploaded to _RaDMaX online_ and all calculations performed with _RaDMaX online_ are stored in RAM and are definitely lost when uploading a new data set or when closing the program. Session saving capabilities are available if you run the Jupyter notebook in offline mode (see [below](#offline-mode)).
