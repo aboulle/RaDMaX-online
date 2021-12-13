@@ -89,3 +89,9 @@ def interp_and_fit_strain(x, y, alt, old_sp, model):
 
 	sp_fit, success = leastsq(errfunc, old_sp, args=(alt, int_curve))
 	return sp_fit
+
+def shift_strain(alt, sp, t, shifted_strain, model):
+	strain_old = f_strain(alt, sp, t, model)
+	def errfunc(sp, alt, strain, t, model): return f_strain(alt, sp, t, model) - shifted_strain
+	sp_new, success = leastsq(errfunc, sp, args=(alt, strain_old, t,model))
+	return sp_new

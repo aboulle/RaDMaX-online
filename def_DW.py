@@ -92,3 +92,8 @@ def interp_and_fit_dw(x, y, alt, old_dwp, model):
 	dwp_fit, success = leastsq(errfunc, old_dwp, args=(alt, int_curve))
 	return dwp_fit
 
+def shift_dw(alt, dwp, t, shifted_dw, model):
+	dw_old = f_DW(alt, dwp, t, model)
+	def errfunc(dwp, alt, dw, t, model): return f_DW(alt, dwp, t, model) - shifted_dw
+	dwp_new, success = leastsq(errfunc, dwp, args=(alt, dw_old, t, model))
+	return dwp_new
