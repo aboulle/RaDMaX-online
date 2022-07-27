@@ -57,9 +57,9 @@ def compute_cst(w_list, th):
 	h, k, l = int(w_list[7].value), int(w_list[8].value), int(w_list[9].value)
 	phi = 0. #TODO implement asymmetric scattering
 	d = mater.planeDistance(h,k,l)
-	FH = mater.StructureFactor(mater.Q(h,k,l),12398*wl)
-	FmH = mater.StructureFactor(mater.Q(-h,-k,-l),12398*wl)
-	F0 = mater.StructureFactor(mater.Q(0,0,0),12398*wl)
+	FH = mater.StructureFactor(mater.Q(h,k,l),12398/wl)
+	FmH = mater.StructureFactor(mater.Q(-h,-k,-l),12398/wl)
+	F0 = mater.StructureFactor(mater.Q(0,0,0),12398/wl)
 
 	G = re * wl * wl / (np.pi * Vol) # Gamma : Structure factor -> Polarizability
 	thB_S  = np.arcsin(wl / (2*d))
@@ -117,9 +117,9 @@ def compute_cst(w_list, th):
 #		cst["h_sub"], cst["k_sub"], cst["l_sub"] =  h_sub, k_sub, l_sub
 		cst["phi_sub"] = 0. #TODO implement asymmetric scattering
 		d_sub = sub.planeDistance(h_sub,k_sub,l_sub)
-		cst["FH_sub"] = sub.StructureFactor(sub.Q(h_sub,k_sub,l_sub),12398*wl)
-		cst["FmH_sub"] = sub.StructureFactor(sub.Q(-h_sub,-k_sub,-l_sub),12398*wl)
-		cst["F0_sub"] =sub.StructureFactor(sub.Q(0,0,0),12398*wl)
+		cst["FH_sub"] = sub.StructureFactor(sub.Q(h_sub,k_sub,l_sub),12398/wl)
+		cst["FmH_sub"] = sub.StructureFactor(sub.Q(-h_sub,-k_sub,-l_sub),12398/wl)
+		cst["F0_sub"] =sub.StructureFactor(sub.Q(0,0,0),12398/wl)
 
 		cst["G_sub"] = re * wl * wl / (np.pi * cst["Vol_sub"]) # Gamma : Structure factor -> Polarizability
 		thB_sub  = np.arcsin(wl / (2*d_sub))
