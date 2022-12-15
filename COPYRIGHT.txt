@@ -1,6 +1,6 @@
-Copyright Alexandre Boulle (2019)
+Copyright Alexandre Boulle (2022)
 
-alexandre.boulle@unilim.fr
+alexandre.boulle@cnrs.fr
 
 
 This software is a web-based computer program whose purpose is to determine
