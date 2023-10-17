@@ -1,0 +1,159 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-02-13 21:28:24 +0200 (Sat, 13 Feb 2016) $
+#$Revision: 176429 $
+#$URL: file:///home/coder/svn-repositories/cod/cif/1/53/50/1535065.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_1535065
+loop_
+_publ_author_name
+'Massidda, S.'
+'Continenza, A.'
+'Freeman, A.J.'
+'de Pascale, T.M.'
+'Meloni, F.'
+'Serra, M.'
+_publ_section_title
+;
+ Structural and electronic properties of narrow-band-gap semiconductors:
+ In P, In As, and In Sb
+;
+_journal_name_full
+'Physical Review, Serie 3. B - Condensed Matter (18,1978-)'
+_journal_page_first              12079
+_journal_page_last               12085
+_journal_volume                  41
+_journal_year                    1990
+_chemical_formula_sum            'As In'
+_chemical_name_systematic        'In As'
+_space_group_IT_number           216
+_symmetry_space_group_name_Hall  'F -4 2 3'
+_symmetry_space_group_name_H-M   'F -4 3 m'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                90
+_cell_formula_units_Z            4
+_cell_length_a                   6.058
+_cell_length_b                   6.058
+_cell_length_c                   6.058
+_cell_volume                     222.325
+_citation_journal_id_ASTM        PRBMDO
+_cod_data_source_file            Massidda_PRBMDO_1990_1801.cif
+_cod_data_source_block           As1In1
+_cod_original_cell_volume        222.3248
+_cod_original_formula_sum        'As1 In1'
+_cod_database_code               1535065
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+y,-x,-z
+-x,-y,z
+-y,x,-z
+x,-y,-z
+-y,-x,z
+-x,y,-z
+y,x,z
+z,x,y
+x,-z,-y
+-z,-x,y
+-x,z,-y
+z,-x,-y
+-x,-z,y
+-z,x,-y
+x,z,y
+y,z,x
+y,-z,-x
+-z,-y,x
+-y,z,-x
+z,y,x
+-y,-z,x
+-z,y,-x
+z,-y,-x
+x,y+1/2,z+1/2
+y,-x+1/2,-z+1/2
+-x,-y+1/2,z+1/2
+-y,x+1/2,-z+1/2
+x,-y+1/2,-z+1/2
+-y,-x+1/2,z+1/2
+-x,y+1/2,-z+1/2
+y,x+1/2,z+1/2
+z,x+1/2,y+1/2
+x,-z+1/2,-y+1/2
+-z,-x+1/2,y+1/2
+-x,z+1/2,-y+1/2
+z,-x+1/2,-y+1/2
+-x,-z+1/2,y+1/2
+-z,x+1/2,-y+1/2
+x,z+1/2,y+1/2
+y,z+1/2,x+1/2
+y,-z+1/2,-x+1/2
+-z,-y+1/2,x+1/2
+-y,z+1/2,-x+1/2
+z,y+1/2,x+1/2
+-y,-z+1/2,x+1/2
+-z,y+1/2,-x+1/2
+z,-y+1/2,-x+1/2
+x+1/2,y,z+1/2
+y+1/2,-x,-z+1/2
+-x+1/2,-y,z+1/2
+-y+1/2,x,-z+1/2
+x+1/2,-y,-z+1/2
+-y+1/2,-x,z+1/2
+-x+1/2,y,-z+1/2
+y+1/2,x,z+1/2
+z+1/2,x,y+1/2
+x+1/2,-z,-y+1/2
+-z+1/2,-x,y+1/2
+-x+1/2,z,-y+1/2
+z+1/2,-x,-y+1/2
+-x+1/2,-z,y+1/2
+-z+1/2,x,-y+1/2
+x+1/2,z,y+1/2
+y+1/2,z,x+1/2
+y+1/2,-z,-x+1/2
+-z+1/2,-y,x+1/2
+-y+1/2,z,-x+1/2
+z+1/2,y,x+1/2
+-y+1/2,-z,x+1/2
+-z+1/2,y,-x+1/2
+z+1/2,-y,-x+1/2
+x+1/2,y+1/2,z
+y+1/2,-x+1/2,-z
+-x+1/2,-y+1/2,z
+-y+1/2,x+1/2,-z
+x+1/2,-y+1/2,-z
+-y+1/2,-x+1/2,z
+-x+1/2,y+1/2,-z
+y+1/2,x+1/2,z
+z+1/2,x+1/2,y
+x+1/2,-z+1/2,-y
+-z+1/2,-x+1/2,y
+-x+1/2,z+1/2,-y
+z+1/2,-x+1/2,-y
+-x+1/2,-z+1/2,y
+-z+1/2,x+1/2,-y
+x+1/2,z+1/2,y
+y+1/2,z+1/2,x
+y+1/2,-z+1/2,-x
+-z+1/2,-y+1/2,x
+-y+1/2,z+1/2,-x
+z+1/2,y+1/2,x
+-y+1/2,-z+1/2,x
+-z+1/2,y+1/2,-x
+z+1/2,-y+1/2,-x
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+As1 As-3 0.25 0.25 0.25 1 0.0
+In1 In+3 0 0 0 1 0.0
