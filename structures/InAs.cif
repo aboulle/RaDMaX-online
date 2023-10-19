@@ -149,11 +149,10 @@ z+1/2,y+1/2,x
 z+1/2,-y+1/2,-x
 loop_
 _atom_site_label
-_atom_site_type_symbol
 _atom_site_fract_x
 _atom_site_fract_y
 _atom_site_fract_z
 _atom_site_occupancy
 _atom_site_U_iso_or_equiv
-As1 As-3 0.25 0.25 0.25 1 0.0
-In1 In+3 0 0 0 1 0.0
+As1 0.25 0.25 0.25 1 0.0
+In1 0 0 0 1 0.0
