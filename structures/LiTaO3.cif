@@ -1,0 +1,91 @@
+#------------------------------------------------------------------------------
+#$Date: 2017-12-03 20:15:53 +0200 (Sun, 03 Dec 2017) $
+#$Revision: 203907 $
+#$URL: file:///home/coder/svn-repositories/cod/cif/1/54/47/1544717.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_1544717
+loop_
+_publ_author_name
+'Ohgaki, M.'
+'Tanaka, K.'
+'Marumo, F.'
+_publ_section_title
+;
+ Anharmonic thermal vibration in a crystal of lithium(I) tantalum(V)
+ trioxide, LiTaO3
+;
+_journal_name_full               'Mineralogical Journal'
+_journal_page_first              373
+_journal_page_last               382
+_journal_volume                  14
+_journal_year                    1989
+_chemical_formula_sum            'Li O3 Ta'
+_chemical_name_common            LiTaO3
+_chemical_name_mineral           'lithium tantalum trioxide'
+_space_group_crystal_system      trigonal
+_space_group_IT_number           161
+_space_group_name_Hall           'R 3 -2"c'
+_space_group_name_H-M_alt        'R 3 c :H'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                120
+_cell_formula_units_Z            6
+_cell_length_a                   5.15329(7)
+_cell_length_b                   5.15329(7)
+_cell_length_c                   13.7806(5)
+_cell_volume                     316.933(13)
+_cod_data_source_file            LiTaO3.cif
+_cod_data_source_block           LiTaO3
+_cod_original_formula_sum        'Li Ta O3'
+_cod_database_code               1544717
+loop_
+_space_group_symop_id
+_space_group_symop_operation_xyz
+1 'x, y, z'
+2 '-y, x-y, z'
+3 '-x+y, -x, z'
+4 '-y, -x, z+1/2'
+5 '-x+y, y, z+1/2'
+6 'x, x-y, z+1/2'
+7 'x+2/3, y+1/3, z+1/3'
+8 '-y+2/3, x-y+1/3, z+1/3'
+9 '-x+y+2/3, -x+1/3, z+1/3'
+10 '-y+2/3, -x+1/3, z+5/6'
+11 '-x+y+2/3, y+1/3, z+5/6'
+12 'x+2/3, x-y+1/3, z+5/6'
+13 'x+1/3, y+2/3, z+2/3'
+14 '-y+1/3, x-y+2/3, z+2/3'
+15 '-x+y+1/3, -x+2/3, z+2/3'
+16 '-y+1/3, -x+2/3, z+1/6'
+17 '-x+y+1/3, y+2/3, z+1/6'
+18 'x+1/3, x-y+2/3, z+1/6'
+loop_
+_atom_site_label
+_atom_site_occupancy
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_adp_type
+_atom_site_B_iso_or_equiv
+_atom_site_type_symbol
+Li 1.0 0.000000 0.000000 0.2909(7) Biso 0.210000 Li
+Ta 1.0 0.000000 0.000000 0.000000 Biso 0.352674 Ta
+O 1.0 0.0495(4) 0.3425(4) 0.0749(7) Biso 0.485146 O
+loop_
+_atom_site_aniso_label
+_atom_site_aniso_U_11
+_atom_site_aniso_U_22
+_atom_site_aniso_U_33
+_atom_site_aniso_U_12
+_atom_site_aniso_U_13
+_atom_site_aniso_U_23
+Li 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000
+Ta 0.00492 0.00492 0.00356 0.00246 0.00000 0.00000
+O 0.00660 0.00590 0.00550 0.00280 -0.00160 -0.00260
